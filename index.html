@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональный массаж | Ваше здоровье в надежных руках</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Массажный салон</h1>
+            </div>
+           <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-mobile">
+                <button class="close-menu">&times;</button>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h2>Профессиональный массаж для вашего здоровья</h2>
+            <p>Расслабление, восстановление и забота о вашем теле</p>
+            <a href="booking.html" class="btn btn-large">Записаться на сеанс</a>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+   <section id="about" class="about">
+        <div class="container">
+            <h2 class="stagger-item">Кто я</h2>
+            <div class="about-content">
+                <div class="about-text stagger-item">
+                    <p>Меня зовут [Имя массажиста]. Я сертифицированный массажист с [количество] летним опытом работы. Специализируюсь на различных видах массажа, включая лечебный, расслабляющий и спортивный.</p>
+                    <p>Моя миссия - помочь вам избавиться от боли, напряжения и стресса, используя профессиональные техники массажа.</p>
+                </div>
+                <div class="about-image stagger-item">
+                    <img src="images/massage-therapist.jpg" alt="Массажист" class="hover-lift">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Что я делаю</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Лечебный массаж</h3>
+                    <p>Специализированный массаж для устранения болевых синдромов и восстановления после травм.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Расслабляющий массаж</h3>
+                    <p>Идеальное решение для снятия стресса и напряжения после тяжелого дня.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Спортивный массаж</h3>
+                    <p>Помогает athletes подготовиться к нагрузкам и быстрее восстановиться после тренировок.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Связь -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Как со мной связаться</h2>
+            <div class="contact-info">
+                <p><strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
+                <p><strong>Email:</strong> example@massage.com</p>
+                <p><strong>Адрес:</strong> г. Город, ул. Примерная, д. 123</p>
+                <p><strong>Часы работы:</strong> Пн-Пт: 9:00-20:00, Сб: 10:00-18:00, Вс: выходной</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="cta">
+        <div class="container">
+            <h2>Готовы записаться на сеанс?</h2>
+            <p>Выберите удобное время через онлайн-календарь</p>
+            <a href="booking.html" class="btn btn-large">Записаться сейчас</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Массажный салон</h3>
+                    <p>Профессиональный массаж для вашего здоровья и благополучия</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>+7 (XXX) XXX-XX-XX</p>
+                    <p>example@massage.com</p>
+                    <p>г. Город, ул. Примерная, д. 123</p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 9:00-20:00</p>
+                    <p>Сб: 10:00-18:00</p>
+                    <p>Вс: выходной</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Массажный салон. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMobile = document.querySelector('.nav-mobile');
+    const overlay = document.querySelector('.overlay');
+    const closeMenu = document.querySelector('.close-menu');
+    const body = document.body;
+    
+    // Открытие меню
+    mobileMenuBtn.addEventListener('click', function() {
+        navMobile.classList.add('active');
+        overlay.classList.add('active');
+        body.style.overflow = 'hidden';
+    });
+    
+    // Закрытие меню
+    function closeMobileMenu() {
+        navMobile.classList.remove('active');
+        overlay.classList.remove('active');
+        body.style.overflow = '';
+    }
+    
+    closeMenu.addEventListener('click', closeMobileMenu);
+    overlay.addEventListener('click', closeMobileMenu);
+    
+    // Закрытие при клике на ссылку
+    const navLinks = document.querySelectorAll('.nav-mobile a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+    
+    // Закрытие при нажатии Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
+});
+</script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
